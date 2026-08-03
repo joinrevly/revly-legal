@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index,follow">
-<title>Legal — Revly</title>
+<title>Page not found — Revly</title>
 <style>
 :root{
   --bg:#ffffff; --fg:#1a1a1a; --muted:#5b6472; --accent:#e5533c;
@@ -81,16 +81,47 @@ footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); colo
 </header>
 <main class="wrap">
 
-<section class="hero">
-  <h1>Revly — Legal</h1>
-  <p class="meta">The driving journal &amp; ride-tracking app. Record your drives, build your garage, ride with your crew.</p>
-  <div class="cards">
-    <a class="card" href="/privacy"><h3>Privacy Policy →</h3><p>How Revly collects, uses, and protects your data.</p></a>
-    <a class="card" href="/terms"><h3>Terms of Service →</h3><p>The rules for using Revly.</p></a>
-    <a class="card" href="/community-guidelines"><h3>Community Guidelines →</h3><p>What we expect from everyone on Revly.</p></a>
-    <a class="card" href="/consumer-health-data"><h3>Consumer Health Data Privacy Policy →</h3><p>For residents of Washington, Nevada, and Connecticut.</p></a>
+<section class="share" id="share" hidden>
+  <p class="handle" id="handle"></p>
+  <p class="lead" id="lead"></p>
+  <div class="btnrow">
+    
+    <a class="btn secondary" id="open-app" href="#" hidden>Open in Revly</a>
   </div>
+  <p class="meta" style="margin-top:18px">Revly is coming to the App Store.</p>
 </section>
+<section class="share" id="notfound">
+  <h1>Page not found</h1>
+  <p class="lead">That link doesn't point anywhere on this site.</p>
+  <div class="btnrow"><a class="btn secondary" href="/">Go to the homepage</a></div>
+</section>
+<script>
+(function () {
+  var KINDS = {
+    u: { label: 'rider', prefix: '@' },
+    p: { label: 'drive', prefix: '' },
+    t: { label: 'circuit', prefix: '' }
+  };
+  var parts = window.location.pathname.split('/').filter(Boolean);
+  var kind = parts.length === 2 ? KINDS[parts[0]] : null;
+  // Never trust the path: it is attacker-controlled and this page is public.
+  // Whitelist the same characters the app allows in an id, and write through
+  // textContent so nothing in it can become markup.
+  var value = kind ? (parts[1].match(/^[A-Za-z0-9._-]{1,80}$/) ? parts[1] : '') : '';
+  if (!kind || !value) { return; }
+
+  document.title = kind.prefix + value + ' — Revly';
+  document.getElementById('handle').textContent = kind.prefix + value;
+  document.getElementById('lead').textContent =
+    'Open this ' + kind.label + ' in Revly.';
+  document.getElementById('share').hidden = false;
+  document.getElementById('notfound').hidden = true;
+
+  var open = document.getElementById('open-app');
+  open.href = 'revly://' + parts[0] + '/' + value;
+  open.hidden = false;
+})();
+</script>
 
 <footer>© 2026 Revly · Gökdeniz Kaymaz &amp; Suat Emir Atabey · <a href="mailto:support@joinrevly.com">support@joinrevly.com</a></footer>
 </main>

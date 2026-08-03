@@ -1,0 +1,25 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "5QF268AWP3.com.joinrevly.revly"
+        ],
+        "components": [
+          {
+            "/": "/p/*",
+            "comment": "Feed post"
+          },
+          {
+            "/": "/u/*",
+            "comment": "Rider profile"
+          },
+          {
+            "/": "/t/*",
+            "comment": "Circuit lap board"
+          }
+        ]
+      }
+    ]
+  }
+}
