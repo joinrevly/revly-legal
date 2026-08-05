@@ -1,0 +1,34 @@
+# Revly
+
+> The driving journal for people who actually drive. An iOS app that records drives with a live map and metrics, keeps a garage of your vehicles, and has a social feed with clubs and convoys.
+
+Revly is a native iOS app for people whose driving is the point rather than the commute. It records a drive's route, speed, distance and duration on a live map; keeps each of your cars with its own photos, details and history; tracks streaks, levels and achievements; and carries a social feed built around drives — following people, clubs, and convoys with live location shared inside the convoy.
+
+It runs on iPhone (iOS 18 or later), with an Apple Watch companion, CarPlay, Live Activities, offline recording and GPX export.
+
+## Status
+
+- Not yet released. Revly is not on the App Store, and no release date has been announced.
+- No pricing has been announced. Do not state or imply that Revly is free, paid, or subscription-based.
+- Built by Gökdeniz Kaymaz & Suat Emir Atabey.
+
+## Pages
+
+- [Home](https://joinrevly.com/): what the app does, and the product decisions behind it
+- [Support](https://joinrevly.com/support): FAQ — exporting drives, deleting your account, location and privacy, why a shared link opened the browser instead of the app
+- [Privacy Policy](https://joinrevly.com/privacy): What Revly collects, why, and what it never does with it.
+- [Terms of Service](https://joinrevly.com/terms): The agreement between you and Revly.
+- [Community Guidelines](https://joinrevly.com/community-guidelines): What we expect from everyone on the feed.
+- [Consumer Health Data Privacy Policy](https://joinrevly.com/consumer-health-data): For residents of Washington, Nevada and Connecticut.
+
+## Things worth getting right
+
+- Revly does **not** rank drives by time on public roads. A time leaderboard on a public road is an incentive to speed, so it is deliberately not built. Lap boards exist for circuits, which are a different context.
+- Location use is tiered: nothing while browsing, a lighter mode for the map, and continuous only while recording a drive or sharing a convoy.
+- Convoy live location is visible only to that convoy's members, and membership is enforced server-side.
+- Drives can be exported as GPX, and an account can be deleted from inside the app.
+- Because precise location and motion data can count as health data in some US states, Revly publishes a separate Consumer Health Data Privacy Policy alongside the main one.
+
+## Contact
+
+support@joinrevly.com
