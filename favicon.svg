@@ -12,10 +12,10 @@
     variant, so the tab icon and the app icon agree about what colour Revly is.
   -->
   <style>
-    .face { fill: #00738f; }
+    .face { fill: #007fad; }
     .mark { stroke: #ffffff; }
     @media (prefers-color-scheme: dark) {
-      .face { fill: #3fc1e0; }
+      .face { fill: #13b2ec; }
       .mark { stroke: #04141a; }
     }
   </style>
