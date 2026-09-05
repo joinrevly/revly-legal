@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://joinrevly.com/</loc></url>
-  <url><loc>https://joinrevly.com/support</loc></url>
-  <url><loc>https://joinrevly.com/privacy</loc></url>
-  <url><loc>https://joinrevly.com/terms</loc></url>
-  <url><loc>https://joinrevly.com/community-guidelines</loc></url>
-  <url><loc>https://joinrevly.com/consumer-health-data</loc></url>
+  <url><loc>https://joinrevly.com/support/</loc></url>
+  <url><loc>https://joinrevly.com/privacy/</loc></url>
+  <url><loc>https://joinrevly.com/terms/</loc></url>
+  <url><loc>https://joinrevly.com/community-guidelines/</loc></url>
+  <url><loc>https://joinrevly.com/consumer-health-data/</loc></url>
 </urlset>

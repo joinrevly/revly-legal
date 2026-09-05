@@ -17,6 +17,10 @@
           {
             "/": "/t/*",
             "comment": "Circuit lap board"
+          },
+          {
+            "/": "/c/*",
+            "comment": "Club invite"
           }
         ]
       }
